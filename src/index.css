@@ -11,3 +11,80 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.homediv img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+   height: 250px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+.srchdiv button{
+  margin-left: 10px;
+  border-color: black;
+  background-color: rgba(255, 153, 0, 0.678);
+  font-size: 15px;
+ color: black;
+  
+}
+.srchdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  height: 150px;
+  background-color: burlywood;
+  width: 45%;
+  /* display: block; */
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+   align-items: center; 
+   text-align: center;
+  justify-content: center; 
+  color: white;
+  font-size: 20px;
+}
+.imgdiv{
+  display: flex;
+  height: 190px;
+  background-color: burlywood;
+  width: 45%;
+  margin-top: 1px;
+  margin-left: auto;
+  margin-right: auto;
+   align-items: center; 
+  justify-content: center; 
+  color: white;
+
+}
+.ratingdiv {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  text-align: center;
+  background-color:burlywood;
+  width: 45%;
+  margin-top: 1px;
+  margin-left: auto;
+  margin-right: auto;
+   align-items: center; 
+  justify-content: center; 
+  color: white;
+  font-size: 20px;
+}
+.booklist {
+  width: 80%;
+  margin-left:auto;
+  margin-right: auto;
+  height: auto;
+  background-color: bisque;
+  display: flex;
+  color: rgba(31, 111, 152, 0.864);
+  text-align: center;
+  font-size: 20px;
+  flex-direction: column;
+}
