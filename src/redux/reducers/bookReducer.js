@@ -19,17 +19,3 @@ export const bookReducer= (state= initialState, {type, payload})=> {
         return state;
  }
 }
-
-
-
-
-
-
-
-//    export const setUserData= (state= initialState, {type, payload})=> {
-//     console.log("payload",payload )
-//     switch (type) {
-//        case ActionTypes.SET_USER_DATA:
-//         return {newUser:payload};
-//     }
-//    }

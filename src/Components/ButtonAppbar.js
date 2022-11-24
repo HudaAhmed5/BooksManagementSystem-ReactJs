@@ -17,13 +17,11 @@ import { setUser } from "../redux/actions/loginAction";
   const navigate= useNavigate();
    const logOut=()=> {
     dispatch(setUser(null));
-    navigate('login')
-    
+    navigate('/login')
    }
-  // const fromLogout = () =>{
-  //   localStorage.setItem('fromLogin',false)
-  //     navigate('login') 
-  // }
+   const toHome=()=>{
+    navigate('/')
+   }
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -37,13 +35,13 @@ import { setUser } from "../redux/actions/loginAction";
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography onClick={()=>{toHome()}} variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Jazza Book Search
           </Typography>
     
           {user&&user.email?
              <Button onClick={()=>{logOut()}} color="inherit">LogOut</Button>:
-             <Button onClick={()=>{logOut()}} color="inherit">LogIn</Button>}
+             <Button  color="inherit">LogIn</Button>}
         </Toolbar>
       </AppBar>
     </Box>

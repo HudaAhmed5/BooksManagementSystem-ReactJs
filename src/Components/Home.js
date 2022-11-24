@@ -23,7 +23,6 @@ const Home = () => {
 
   
   const handleClick=()=> {
-    // e.preventDefault()
     if(user&& user.email){
     navigate(`/booklist/${query}`)
     }
@@ -34,13 +33,22 @@ const Home = () => {
   }
   const handleBoxChange=(e,data)=> {
    console.log(e,data)
+  
+    if(user&& user.email) 
+   {
     navigate(`/book/${data.id}`);
+   }else {
+    window.alert("You must login first");
+    navigate('login')
   }
+}
   const handleChange =(e)=> {
     let input= e.target.value
     setQuery(input)
     dispatch(gettingData(query))
-  }
+    } 
+   
+  
   return ( 
   <Box className="homediv">
     < ButtonAppBar />
